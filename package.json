@@ -1,0 +1,25 @@
+{
+  "name": "goit-react-nodejs-hw-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon ./server.js localhost 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianSiwek/goit-react-nodejs-hw-01.git"
+  },
+  "keywords": [],
+  "author": "Adrian Siwek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianSiwek/goit-react-nodejs-hw-01/issues"
+  },
+  "homepage": "https://github.com/AdrianSiwek/goit-react-nodejs-hw-01#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
