@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/AdrianSiwek/goit-react-nodejs-hw-01#readme",
   "dependencies": {
+    "commander": "^11.0.0",
     "nodemon": "^2.0.22"
   }
 }
