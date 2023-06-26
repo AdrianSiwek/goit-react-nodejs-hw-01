@@ -51,11 +51,11 @@ async function addContact(name, email, phone) {
 async function removeContact(contactId) {
   try {
     const data = await fs.readFile(contactsPath);
-    const dataParse = JSON.parse(data);
-    const removeContact = dataParse.filter((data) => data.id !== contactId);
-    fs.writeFile(contactsPath, JSON.stringify(removeContact));
-    console.log(`Contact was deleted!`.red);
-    listContacts();
+    const filterContacts = JSON.parse(data).filter(
+      (data) => Number(data.id) !== Number(contactId)
+    );
+    await fs.writeFile(contactsPath, JSON.stringify(filterContacts));
+    return listContacts();
   } catch (err) {
     return console.log(err);
   }
