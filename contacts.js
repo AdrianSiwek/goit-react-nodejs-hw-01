@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 const path = require("path");
-require("colors");
+
 
 const contactsPath = path.resolve("./db/contacts.json");
 
